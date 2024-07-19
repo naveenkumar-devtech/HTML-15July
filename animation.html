@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            animation-name: mybox;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+            animation-direction: alternate;
+            animation-delay: 1s;
+            
+
+        }
+        .box2{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            animation-name: mybox2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: absolute;
+          
+
+
+        }
+        @keyframes mybox{
+            from{
+                background-color: pink;
+                left: 0px;
+                top: 0px;
+                height: 0px;
+                width: 0px;
+                border-radius: 0px;
+
+            }
+            to{
+                background-color: purple;
+                left: 300px;
+                width: 300px;
+                height: 300px;
+                border-radius: 50px;
+                top: 300px;
+            }
+        }
+        @keyframes mybox2 {
+            from{
+                right: 0px;
+                top: 0px;
+                background-color: orange;
+                border-radius: 0px;
+                height: 0px;
+                width: 0px;
+
+            }
+            to{
+               
+                background-color: yellow;
+                right: 300px;
+                border-radius: 50px;
+            }
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>
